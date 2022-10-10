@@ -4,7 +4,7 @@
     --orange: hsl(25, 97%, 53%);
     --white: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
-    --mediumGrey: hsl(216, 12%, 54%);
+    --mediumGrey: hsl(217, 9%, 29%);
     --darkBlue: hsl(213, 19%, 18%);
     --veryDarkBlue: hsl(216, 12%, 8%);
 }
@@ -17,7 +17,7 @@
 
 }
 
-h1{
+h1 {
     font-family: 'Overpass', sans-serif;
     color: var(--white);
     text-align: left;
@@ -26,19 +26,21 @@ h1{
 
 }
 
-p{
+p {
     font-family: 'Overpass', sans-serif;
     font-size: 15px;
     color: var(--lightGrey);
     text-align: justify;
     line-height: 25px;
 }
-.atribution{
+
+.atribution {
     position: fixed;
     top: 95%;
     left: 30%;
     font-size: 11px;
 }
+
 .container {
     position: relative;
     display: grid;
@@ -59,11 +61,11 @@ p{
 
 }
 
-.hiddenState{
+.hiddenState {
     display: none;
 }
 
-.showState{
+.showState {
     display: block;
 }
 
@@ -71,14 +73,29 @@ p{
     color: hsl(228, 45%, 44%);
 }
 
-#star{
+#star {
     display: inline;
     align-items: left;
     margin-left: 0;
 }
-#img-star{
+
+#img-star,
+#ima-star:hover {
     position: relative;
     top: 30%;
+
+}
+
+.rate-btn:hover {
+    background-color: var(--lightGrey);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.rate-btn:active {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
 }
 
 .rate-btn {
@@ -92,13 +109,19 @@ p{
     text-align: center
 }
 
-.btn-container{
+.btn-container {
     position: relative;
     display: grid;
     width: 100%;
     grid-template-columns: auto auto auto auto auto;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.submit-btn:active {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
 }
 
 .submit-btn {
