@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-family: 'Overpass', sans-serif;
+    color: var(--white);
+    text-align: left;
+
+}
+
+p{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    color: var(--lightGrey);
+    text-align: justify;
+    line-height: 25px;
+}
+.atribution{
+    position: fixed;
+    top: 95%;
+    left: 30%;
+    font-size: 11px;
+}
+.container {
+    position: relative;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    border-radius: 20px;
+    background-color: var(--darkBlue);
+    padding: 25px;
+
+    border: 1px solid black;
+    margin: auto;
+
+    width: 350px;
+    height: 350px;
+    font-size: 11px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hiddenState{
+    display: none;
+}
+
+.showState{
+    display: block;
+}
+
+.container a {
+    color: hsl(228, 45%, 44%);
+}
+
+#star{
+    display: inline;
+    align-items: left;
+    margin-left: 0;
+}
+#img-star{
+    position: relative;
+    top: 30%;
+}
+
+.rate-btn {
+    width: 50px;
+    height: 50px;
+    background-color: var(--mediumGrey);
+    color: var(--lightGrey);
+    border-radius: 50%;
+    margin: auto;
+    border: none;
+    text-align: center
+}
+
+.btn-container{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto auto auto;
+    margin: auto;
+}
+
+.submit-btn {
+    display: block;
+    position: relative;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    width: 80%;
+    margin: auto;
+}
